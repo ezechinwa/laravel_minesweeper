@@ -21,6 +21,7 @@ const messageText = document.querySelector(".subtext")
 board.forEach(row => {
     row.forEach(tile => {
         boardElement.append(tile.element)
+
         tile.element.addEventListener("click", () => {
             revealTile(board, tile)
             checkGameEnd()

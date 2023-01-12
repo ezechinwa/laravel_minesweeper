@@ -27,6 +27,7 @@ export function createBoard(boardSize, numberOfMines) {
                 },
                 set status(value) {
                     this.element.dataset.status = value
+
                 },
             }
 
@@ -60,6 +61,7 @@ export function revealTile(board, tile) {
 
     if (tile.mine) {
         tile.status = TILE_STATUSES.MINE
+        tile.element.textContent = 'X'
         return
     }
 
@@ -69,7 +71,7 @@ export function revealTile(board, tile) {
     if (mines.length === 0) {
         adjacentTiles.forEach(revealTile.bind(null, board))
     } else {
-        tile.element.textContent = mines.length
+        tile.element.textContent =  mines.length
     }
 }
 

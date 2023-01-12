@@ -49,12 +49,14 @@
 
 .board > [data-status="mine"] {
     background-color: red;
+    color: white
+
 }
 
 .board > [data-status="number"] {
-    background-color: none;
+    background-color: green;
 }
 
 .board > [data-status="marked"] {
-    background-color: yellow;
+    background-color: orange;
 }
