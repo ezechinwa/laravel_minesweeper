@@ -1,4 +1,4 @@
-<h1> Minesweeper app was built using Tailwind ,Php , Laravel, HTML, CSS and Javascript </h1>
+<h1> Minesweeper app was built using Tailwind ,Php , Laravel, HTML, CSS, Eslint and Javascript </h1>
 
 <h1> Installation </h1>
 <p>1. clone the project and navigate to the project directory</p>
